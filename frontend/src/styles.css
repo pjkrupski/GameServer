@@ -1,0 +1,57 @@
+
+body {
+    background-color: lightgray;
+}
+
+#index-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background-color: white;
+    margin-top: 5em;
+    text-align: center;
+    border-radius: 20px;
+    padding-bottom: .5em;
+}
+
+#lobby-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background-color: white;
+    margin-top: 5em;
+    border-radius: 20px;
+    padding-bottom: .5em;
+    padding-left: 2em;
+}
+
+#round-number {
+    font-size: 3em;
+}
+
+#scoreboard {
+    background-color: white;
+    font-size: 20px;
+    float: left;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.alive { background-color: #66bb6a; }
+.dead { background-color: #f44336; }
+
+table {
+    text-align: center;
+}
+
+thead {
+    text-align: center;
+    font-weight: bold;
+}
+tr {
+    border: 1px solid black;
+}
+
+hr {
+    width: 90%;
+}

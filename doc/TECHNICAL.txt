@@ -1,0 +1,28 @@
+
+
+Possible Demo server options, as we have to expose a plain HTTP server
+
+https://ngrok.com/product
+https://tunnelto.dev/#features
+
+
+
+
+
+Thoughts on client side prediction:
+
+Sending each keypress to the server and waiting to move the client's player
+when a move is validated will lead to an awful experience (you have to wait for
+a full round trip before seeing your action).
+
+To combat this, "client side prediction" is often employed. This means that the
+client's moves will tentatively be assumed to be good, and rendered for each client.
+This causes movements to be instantly seen on the client side (which is good).
+
+Meanwhile, the moves are being sent to the backend for verification. If the server
+finds out that you moved into a wall (ie: a malformed or malicious client), your client
+is smited by the hand of god (the server) and you lose the game.
+
+Because our map is so simple and static, we can perform 100% accurate client side predictions
+on player movements. This means that the only dependency on the server will be the locations of
+other players (and the ghost(s)). 

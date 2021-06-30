@@ -1,0 +1,112 @@
+//package edu.brown.cs.termproject.gamebackend;
+//
+//import javax.lang.model.type.NoType;
+//import java.awt.Point;
+//import java.util.List;
+//import java.util.Map;
+//
+//public class Maze {
+//
+//  class Player {
+//    int x, y;
+//    int id;
+//  }
+//
+//  static Maze randomMaze() {
+//    Maze maze = new Maze();
+//    for (int i = 0; i < 10; i++) {
+//      for (int j = 0; j < 10; j++) {
+//        maze.mazeDataInts[i][j] = NORTH;
+//      }
+//    }
+//    return maze;
+//  }
+//
+//  enum WallState {
+//    NORTH, SOUTH, EAST, WEST;
+//  }
+//
+//  WallState[][] mazeData;
+//
+//  int[][] mazeDataInts;
+//
+//  final int NORTH = 1;
+//  final int SOUTH = 2;
+//  final int EAST = 4;
+//  final int WEST = 8;
+//
+//  List<Point> players;
+//
+//  void test() {
+//    mazeDataInts[10][10] |= NORTH;
+//    mazeDataInts[10][10] |= SOUTH;
+//    mazeDataInts[10][10] |= EAST;
+//
+//    players.forEach(point -> {
+//      int x = point.x;
+//      int y = point.y;
+//    });
+//
+//    int hasWallNorth = mazeDataInts[5][5] & NORTH;
+//    if (hasWallNorth  != 0) {
+//      //
+//    }
+//
+//
+//
+//
+//
+//
+//    class Lobby {
+//      Maze maze;
+//      List<Point> players;
+//      List<Point> ghosts;
+//
+//      Map<Integer, Player> playerMap;
+//
+//      void update(int id) {
+//        playerMap.get(id).x++;
+//      }
+//
+//      // call this every tick
+//      void moveGhost(Maze mz, List<Player> players, Point ghostLocation) {
+//        // pure function
+//        // logic to move ghost
+//        // checking players
+//        // checking maze
+//        boolean right = players.get(0).x > ghostLocation.x;
+//
+//      }
+//
+//    }
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//  }
+//
+//  // validmove(0, NORTH);
+//
+//  boolean validMove(int playerIndex, int directino) {
+//    Point player = players.get(playerIndex);
+//    if ((mazeDataInts[player.x][player.y] & NORTH) == 0) {
+//
+//    }
+//
+//    return true;
+//  }
+//
+//
+//}

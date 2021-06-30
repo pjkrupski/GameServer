@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Escape The Maze</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <script src="lobby.js"></script>
+    <script src="game.js"></script>
+    </head>
+<body>
+    <main>
+        <div id="index-container">
+            <div class="intro">
+                <h1>Escape the Maze</h1>
+                <h4>A CS32 multi-player party game!</h4>
+            </div>
+            <hr>
+            <div class="rules">
+                <h3>Game Rules</h3>
+                <ol>
+                    <li>To win, have one party member escape the maze before the ghost gets you all!</li>
+                    <li>Use the arrow keys or WASD to move your players.</li>
+                </ol>
+            </div>
+            <hr>
+            <div class="join">
+                <p>Enter a Lobby ID, or Create a new Game</p>
+                <input type="text" placeholder="Lobby ID" id="lobby-input">
+                <button id="join-button">Join Lobby</button>
+                <br>
+                <button id="create-game-button">Create New Game</button>
+            </div>
+        </div>
+
+        <div id="lobby-container" style="display:none;">
+            <h1 id="lobby-title">Pre-Game Lobby</h1>
+            <h3>Your Name:</h3>
+            <input type="text" id="player-name">
+            <button id="lobby-name-button">Change Name</button>
+            <h3>Current Players:</h3>
+            <ol id="lobby-players">
+            </ol>
+            <button id="lobby-join-game">Join Game!</button>
+            <br>
+            <i>Notice: Usernames will be stored on our servers</i>
+        </div>
+
+        <div id="game-container" style="display: none;">
+            <div id="scoreboard"></div>
+            <canvas id='gameboard' width="800" height="400" style="background-color: white; margin-left: auto; margin-right: auto; display: block;"></canvas>
+
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

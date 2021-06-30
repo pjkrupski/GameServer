@@ -1,0 +1,42 @@
+
+
+server::tick =
+    1. move ghost
+    2. Check if ghost is killing any player
+    3. Update player map with new alive/dead statuses
+    4. Determine if game is over (players won or ghost won)
+
+server::update(client) =
+    1. Move client (and validate their moves)
+    2. 
+
+
+GET /api/newlobby
+
+<uuid for new lobby>
+
+
+
+POST /api/update
+<uuid for lobby>
+<uuid for user>
+<ONE-move from the player> (calculated based on which key is held down when req is sent)
+
+
+{
+    "status": "done" | "in-progress",
+    "map": ".........",
+    "players": [
+        { "name": "brian", "location": [10, 10], "wins": 5, "status": "alive"}
+        { "name": "kwons", "location": [10, 10], "wins": 5, "status": "alive"}
+        ....
+    ],
+    "ghosts": [
+        { location: [4, 4] }
+    ],
+    "round": 5,
+}
+
+
+
+
